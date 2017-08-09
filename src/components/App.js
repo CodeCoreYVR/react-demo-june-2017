@@ -4,9 +4,9 @@ import Hello from './Hello';
 function App (props) {
   return (
     <div className='App'>
-      <Hello />
-      <Hello />
-      <Hello />
+      <Hello name='Jon' bgColor='LightCyan' />
+      <Hello name='Daenerys' fontFamily='Papyrus' />
+      <Hello name='Cersei' />
     </div>
   );
 }

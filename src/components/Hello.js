@@ -4,9 +4,24 @@ import React from 'react';
 // JSX tags are converted to `React.createElement` method calls.
 
 function Hello (props) {
+  const {bgColor = 'Lavender', fontFamily = 'Helvetica Neue'} = props;
+
+  const style = {
+    fontFamily: `${fontFamily}, sans-serif`,
+    fontWeight: '200',
+    backgroundColor: bgColor,
+    borderRadius: '3px'
+  };
+
   return (
-    <h1>Hello, world!</h1>
+    <h1 className='Hello' style={style}>Hello, {props.name}!</h1>
   );
 }
+
+// Using props with JSX:
+// `<Hello name='Jon' />`
+// The `props` object will receive all "HTML Attributes" as properties. Meaning
+// that the above `Hello` React element will instantiated with props having
+// the property `name` and its value being `Jon`.
 
 export default Hello;
