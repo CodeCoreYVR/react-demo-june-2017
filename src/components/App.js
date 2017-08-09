@@ -2,6 +2,7 @@ import React from 'react';
 import Hello from './Hello';
 import Shape from './Shape';
 import OrangeBox from './OrangeBox';
+import Greetings from './Greetings';
 
 function App (props) {
   const style = {
@@ -19,6 +20,7 @@ function App (props) {
       <Shape />
       <Shape bgColor='Red' />
       <Shape bgColor='Green' type='circle' />
+      <Greetings names={['Jo', 'Dave', 'Lana', 'Dana', 'Tom']} />
     </div>
   );
 }
