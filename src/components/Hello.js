@@ -4,7 +4,13 @@ import React from 'react';
 // JSX tags are converted to `React.createElement` method calls.
 
 function Hello (props) {
-  const {bgColor = 'Lavender', fontFamily = 'Helvetica Neue'} = props;
+  const {
+    isBye = false,
+    bgColor = 'Lavender',
+    fontFamily = 'Helvetica Neue'
+  } = props;
+
+  const greeting = isBye ? <em>Bye</em> : <strong>Hello</strong>
 
   const style = {
     fontFamily: `${fontFamily}, sans-serif`,
@@ -14,7 +20,9 @@ function Hello (props) {
   };
 
   return (
-    <h1 className='Hello' style={style}>Hello, {props.name}!</h1>
+    <h1 className='Hello' style={style}>
+      {greeting}, {props.name}!
+    </h1>
   );
 }
 

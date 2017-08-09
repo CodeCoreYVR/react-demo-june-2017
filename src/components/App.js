@@ -12,9 +12,9 @@ function App (props) {
 
   return (
     <div className='App' style={style}>
-      <Hello name='Jon' bgColor='LightCyan' />
+      <Hello name='Jon' bgColor='LightCyan' isBye />
       <Hello name='Daenerys' fontFamily='Papyrus' />
-      <Hello name='Cersei' />
+      <Hello name='Cersei' isBye={true} />
       <OrangeBox />
       <Shape />
       <Shape bgColor='Red' />
