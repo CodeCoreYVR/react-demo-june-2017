@@ -4,6 +4,7 @@ import Shape from './Shape';
 import OrangeBox from './OrangeBox';
 import Greetings from './Greetings';
 import GuestBook from './GuestBook';
+import Timer from './Timer';
 
 function App (props) {
   const style = {
@@ -16,6 +17,7 @@ function App (props) {
   return (
     <div className='App' style={style}>
       <GuestBook />
+      <Timer />
       <Hello name='Jon' bgColor='LightCyan' isBye />
       <Hello name='Daenerys' fontFamily='Papyrus' />
       <Hello name='Cersei' isBye={true} />
