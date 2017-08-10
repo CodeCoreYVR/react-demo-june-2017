@@ -17,7 +17,9 @@ function App (props) {
       <Hello name='Daenerys' fontFamily='Papyrus' />
       <Hello name='Cersei' isBye={true} />
       <OrangeBox />
-      <Shape />
+      <Shape colors={
+        ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+      } />
       <Shape bgColor='Red' />
       <Shape bgColor='Green' type='circle' />
       <Greetings names={['Jo', 'Dave', 'Lana', 'Dana', 'Tom']} />
