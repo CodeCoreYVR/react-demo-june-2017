@@ -3,16 +3,19 @@ import Hello from './Hello';
 import Shape from './Shape';
 import OrangeBox from './OrangeBox';
 import Greetings from './Greetings';
+import GuestBook from './GuestBook';
 
 function App (props) {
   const style = {
     display: 'flex',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginTop: '20vh'
   };
 
   return (
     <div className='App' style={style}>
+      <GuestBook />
       <Hello name='Jon' bgColor='LightCyan' isBye />
       <Hello name='Daenerys' fontFamily='Papyrus' />
       <Hello name='Cersei' isBye={true} />
